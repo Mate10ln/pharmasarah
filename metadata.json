@@ -1,0 +1,7 @@
+{
+  "name": "PharmaSarah - Moving Pharmacy Manager",
+  "description": "An all-in-one management tool for a moving pharmacy business. This no-code web app helps you manage inventory, clients, and sales on the go, with features like low-stock alerts, client balance tracking, and data export.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

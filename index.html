@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaSarah - Moving Pharmacy Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#00529B',
+              'brand-blue-dark': '#003A6F',
+              'brand-green': '#00A89D',
+              'brand-gray': '#F0F4F8',
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://unpkg.com/@zxing/library@0.21.0/umd/index.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-gray">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <!--
+      Deployment Instructions:
+
+      This is a standard React (Vite) project.
+
+      To run locally:
+      1. Ensure you have Node.js and npm installed.
+      2. Save all the provided files into a new project folder.
+      3. Open a terminal in that folder and run `npm install`. This will install React and other necessary dependencies.
+      4. Run `npm install -D typescript @types/react @types/react-dom @vitejs/plugin-react`. These are development dependencies for TypeScript and Vite.
+      5. Create a `vite.config.ts` file in the root and add the following content:
+         import { defineConfig } from 'vite'
+         import react from '@vitejs/plugin-react'
+
+         export default defineConfig({
+           plugins: [react()],
+         })
+      6. Create a `tsconfig.json` file in the root and add standard React TS config.
+      7. Run `npm run dev` to start the local development server. The app will be available at http://localhost:5173 (or another port if 5173 is busy).
+
+      To deploy to the web (e.g., Netlify, Vercel, GitHub Pages):
+      1. Sign up for a free account with a hosting provider like Netlify or Vercel.
+      2. Push your project folder to a GitHub repository.
+      3. Connect your GitHub repository to your hosting provider.
+      4. The provider will automatically detect it's a Vite project. Set the build command to `npm run build` and the publish directory to `dist`.
+      5. Deploy the site. Your app will be live on a public URL.
+    -->
+  </body>
+</html>
